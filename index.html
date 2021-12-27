@@ -17,7 +17,7 @@
   <body>
     <!-- раздел с логотипом, навигацией и контактами -->
     <header class="head">
-      <div class="container">
+      <div class="container header-container">
        <nav class="head-navigation">
         <a lang="en" class="link logo-link" href="./index.html">Web<span class="logo-header">Studio</span>
         </a>
@@ -26,19 +26,20 @@
           <li class="navigation-item"><a class="link navigation-link" href="./portfolio.html">Портфолио</a></li>
           <li class="navigation-item"><a class="link navigation-link" href="">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="list contakts-list">
-        <li  class="contakts-item"><a class="link navigation-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contakts-item"><a class="link navigation-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="list contakts-list">
+          <li  class="contakts-item"><a class="link navigation-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="contakts-item"><a class="link navigation-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+       </nav>
       </div>
     </header>
     <main>
         <!--секция - шапка сайта с заголовком и кнопкой - HERO-->
-      <section class="hero section"> 
+      <section class="hero"> 
         <div class="container">
-         <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
+         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
          <button type="button" class="hero-btn">Заказать услугу</button>
+        </div>
       </section>
         <!-- Секция с описанием достоинств компании -->
       <section class="about section">
@@ -67,7 +68,7 @@
     <!-- Секция с ссылками на описание видов деятельности компании  -->
       <section class="activity section">
         <div class="container">
-        <h2 class="section-title">Чем мы занимаемся</h2>
+        <h2 class="section-title activity-title">Чем мы занимаемся</h2>
         <ul class="list activity-list">
           <li class="activity-item">
             <img 
@@ -104,36 +105,39 @@
               alt="Фото Игоря Демьяненко" 
               width="270"
             >
-            <h3 class="collective-member">Игорь Демьяненко</h3>
-            <p lang="en" class="collective-member-prof">Product Designer</p>
-          </li>
-          <li class="collective-item">
-            <img 
-              src="./images/olga.jpg" 
-              alt="Фото Ольги Репиной" 
-              width="270"
-            >
-            <h3 class="collective-member">Ольга Репина</h3> 
-            <p lang="en" class="collective-member-prof">Frontend Developer</p>
-          </li>
+            <div class="collective-member-caption">
+              <h3 class="collective-member">Игорь Демьяненко</h3>
+              <p lang="en" class="collective-member-prof">Product Designer</p>
+            </div>
+             <li class="collective-item">
+              <img src="./images/olga.jpg" alt="Фото Ольги Репиной" width="270">
+              <div class="collective-member-caption">
+                <h3 class="collective-member">Ольга Репина</h3>
+                <p lang="en" class="collective-member-prof">Frontend Developer</p>
+              </div>
+            </li>
           <li class="collective-item">
             <img 
               src="./images/mykola.jpg" 
               alt="Фото Николая Тарасова" 
               width="270"
             >
-            <h3 class="collective-member">Николай Тарасов</h3>  
-            <p lang="en" class="collective-member-prof">Marketing</p>  
-          </li>
+            <div class="collective-member-caption">
+              <h3 class="collective-member">Николай Тарасов</h3>  
+              <p lang="en" class="collective-member-prof">Marketing</p>  
+            </div>
+            </li>
           <li class="collective-item">
             <img 
               src="./images/mihail.jpg" 
               alt="Фото Михаила Ермакова" 
               width="270"
             >
-            <h3 class="collective-member">Михаил Ермаков</h3>  
-            <p lang="en" class="collective-member-prof">UI Designer</p>  
-          </li>
+            <div class="collective-member-caption">
+              <h3 class="collective-member">Михаил Ермаков</h3>  
+              <p lang="en" class="collective-member-prof">UI Designer</p>  
+            </div>
+            </li>
         </ul>
         </div>
       </section>
@@ -141,7 +145,7 @@
     <!-- Раздел со ссылкой-логотипом и контактными данными компании -->
     <footer class="foot">
       <div class="container">
-      <a lang="en" class="link logo-link" href="./index.html">Web<span class="logo-footer">Studio</span>
+      <a lang="en" class="link logo-link logo-link-bottom" href="./index.html">Web<span class="logo-footer">Studio</span>
       </a>
       <address class="foot-adrs">
         <ul class="list foot-adrs-list">
